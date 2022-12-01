@@ -33,9 +33,9 @@ Mein Game-Bot
  
  <!-- Überschrift der innerhalb der Spalte -->
  <header>
- Was brauche ich um den Bot zu programmieren? <br></br>
- 1. Python installieren:<br></br> Download von www.python.org dann nach dem Start der Installation «Install Now» wählen und die Checkbox “add Python to path” (!) wählen.<br></br>
- 2. Bibliotheken installieren:<br></br> Konsole mittels Befehl CMD öffnen. Im schwarzen Konsolenfenster nacheinander die 6 Befehle eingeben: <br></br>
+ Was brauche ich um den Bot zu programmieren? <br></br><br></br>
+ 1. Python installieren:<br></br> Download von www.python.org dann nach dem Start der Installation «Install Now» wählen und die Checkbox “add Python to path” (!) wählen.<br></br><br></br>
+ 2. Bibliotheken installieren:<br></br> Konsole mittels Befehl CMD öffnen. Im schwarzen Konsolenfenster nacheinander die 6 Befehle eingeben: <br></br><br></br>
  pip3 install pywin32 <br></br>
  pip3 install keyboard <br></br>
  pip3 install pyautogui <br></br>
@@ -44,18 +44,33 @@ Mein Game-Bot
  </header> 
     
     <!-- Textbereich innerhalb der Spalte -->
-    <article>Funktion erstellen: «gehe zur Position X Y» “drücke Maus links” «Maus links loslassen»:<br></br>
+    <article>
+     Funktion erstellen: «gehe zur Position X Y» “drücke Maus links” «Maus links loslassen»:<br></br>
       <pre>    
-      def click(x,y): <br></br>
-      win32api.SetCursorPos((x,y)) <br></br>
-      win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0) <br></br>
-      time.sleep(0.01) #mimipause zwischen dem drücken und loslassen <br></br>  
-      win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0) <br></br>
+      def click(x,y): 
+      win32api.SetCursorPos((x,y)) 
+      win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0) 
+      time.sleep(0.01) #mimipause zwischen dem drücken und loslassen 
+      win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0) 
       </pre>
     </article>
     
+  <aside>
+  <!-- Eine praktische Seitenleiste für die Linksammlung: Diese Seitenleiste auf der rechten Seite heisst im HTML Code "aside"  -->
+  RGB und X Y Werte auslesen:
+- IDLE Shell öffnen
+- Bibliothek laden: Import pyautogui 
+- Funktion aufrufen: Pyautogui.displayMousePosition()
+- X Y Werte für Reihe 1 bis 4 auf einem Blatt Papier festhalten
+
+  <br></br> 
+  </aside>
+
+
     <!-- Schlussteil innerhalb der Spalte -->
-    <footer> Eine Schlaufe 'While – If'  für alle 4 Reihen erstellen: <br></br>
+    <footer>
+     Eine Schlaufe 'While – If'  für alle 4 Reihen erstellen: <br></br>
+     Die Nachfolgenden Befehle kannst du ins Python übertragen (copy-paste). Die Werte für xxx und yyy musst du vorgängig auslesen Konsultiere dafür die Seitenleiste. 
     <pre>
     while keyboard.is_pressed (‘q’) == False: #wiederhole solange q nicht gedrückt ist 
     if pyautoguy.pixel (xxx, yyy) [1] == 0   # [0]rd [1]gn [2]bl -> weil schwarz -> nur ein Wert  auf 0 prüfen 
