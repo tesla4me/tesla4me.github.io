@@ -27,16 +27,44 @@ Mein Game-Bot
  <section>
     
     <!-- Hauptspalte der Website -->
+  Was ist ein Bot? -> eine wiederholende Automatisierung bei der keine Interaktion nötig ist. Der Bot arbeitet für einen Benutzer.
+
     In den nachfolgenden Abschnitten in dieser Spalte ist die Struktur der Webseite beschrieben. Diese Überschrift findest du im HTML-Code unter "section". <br></br>Damit kannst du zum Beispiel eine Einleitung oder  Beschreibung der nachfolgenden Felder schreiben.  
     
-    <!-- Überschrift der innerhalb der Spalte -->
-    <header>Dieses Feld heisst "section-> header" und ist im HTML Code innerhalb von "section" zu finden. Achtung: Nicht verwechseln mit dem header links oben. </header> 
+ <!-- Überschrift der innerhalb der Spalte -->
+ <header>
+ Was brauche ich um den Bot zu programmieren? <br></br>
+ 1. Python installieren: Download von www.python.org dann nach dem Start der Installation «Install Now» wählen und die Checkbox “add Python to path” (!) wählen.
+ 2. Bibliotheken installieren: Konsole mittels Befehl CMD öffnen. Im schwarzen Konsolenfenster nacheinander die 6 Befehle eingeben: <br></br>
+ pip3 install pywin32 <br></br>
+ pip3 install keyboard <br></br>
+ pip3 install pyautogui <br></br>
+ pip3 install opencv-python <br></br>
+ pip3 install pillow <br></br>
+ </header> 
     
     <!-- Textbereich innerhalb der Spalte -->
-    <article>Dieses Feld heisst im HTML Code "section-> article"</article>
+    <article>Funktion erstellen: «gehe zur Position X Y» “drücke Maus links” «Maus links loslassen»:<br></br>
+    ->def click(x,y): <br></br>
+    ->win32api.SetCursorPos((x,y)) <br></br>
+    ->win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0) <br></br>
+    ->time.sleep(0.01) #mimipause zwischen dem drücken und loslassen <br></br>  
+    ->win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0) <br></br>
+    <br></br>
+    </article>
     
     <!-- Schlussteil innerhalb der Spalte -->
-    <footer>Dieses Feld heisst im HTML Code "section-> footer"</footer>
+    <footer> Eine Schlaufe 'While – If'  für alle 4 Reihen erstellen: <br></br>
+    ->while keyboard.is_pressed (‘q’) == False: #wiederhole solange q nicht gedrückt ist <br></br>
+     >if pyautoguy.pixel (xxx, yyy) [1] == 0   # [0]rd [1]gn [2]bl -> weil schwarz -> nur ein Wert  auf 0 prüfen <br></br>
+    ->click (xxx, yyy)  # entsprechende Funktion mit  X Y aufrufen <br></br>
+    ->if pyautoguy.pixel (xxx, yyy) [1] == 0   # entsprechende X Y <br></br>
+    ->click (xxx, yyy) <br></br>
+    ->if pyautoguy.pixel (xxx, yyy) [1] == 0 <br></br>
+    ->click (xxx, yyy) <br></br>
+    ->if pyautoguy.pixel (xxx, yyy) [1] == 0 <br></br>
+    ->click (xxx, yyy) <br></br>
+    </footer>
   </section>
   
  
