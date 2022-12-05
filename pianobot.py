@@ -25,12 +25,12 @@ def click(x,y):
 # Hier werden die viel Spalten nach den schwarzen Feldern geprüft
 # sobald schwarz detektiert wurde wird die Maus an dieser Position geklickt
 while keyboard.is_pressed ("q") == False: #wiederhole solange q nicht gedrückt ist 
-    if pyautogui.pixel (430, 625) [2] == 0:   # [0]rd [1]gn [2]bl -> weil schwarz -> nur ein Wert  auf 0 prüfen 
-        click (430, 615)  # entsprechende MausFunktion mit  X Y aufrufen 
-    if pyautogui.pixel (615, 625) [2] == 0:    #dito wie oben für Spalte 2
-        click (615, 615) 
-    if pyautogui.pixel (700, 625) [2] == 0:    #dito wie oben für Spalte 3
-        click (700, 615) 
-    if pyautogui.pixel (840, 625) [2] == 0:    #dito wie oben für Spalte 4
-        click (840, 615) 
+    if pyautogui.pixel (xxx, yyy) [2] == 0:   # [0]rd [1]gn [2]bl -> weil schwarz -> nur ein Wert  auf 0 prüfen 
+        click (xxx, yyy)  # entsprechende MausFunktion mit  X Y aufrufen 
+    if pyautogui.pixel (xxx, yyy) [2] == 0:    #dito wie oben für Spalte 2
+        click (xxx, yyy) 
+    if pyautogui.pixel (xxx, yyy) [2] == 0:    #dito wie oben für Spalte 3
+        click (xxx, yyy) 
+    if pyautogui.pixel (xxx, yyy) [2] == 0:    #dito wie oben für Spalte 4
+        click (xxx, yyy) 
     
