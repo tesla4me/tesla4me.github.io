@@ -1,3 +1,4 @@
 # tesla4me.github.io
-Meine Seite
-Ich verstehe nicht warum die Inhalte der Seite in das Readme geschrieben werden`?
+Das ist die Infodatei meiner Seite
+Der Inhalt wird angezeigt sofern keine index.html Datei im branch existiert.
+Diese Seite wurd für Uebungs- und Schulungszwecke angelegt
