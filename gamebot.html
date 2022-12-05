@@ -25,66 +25,55 @@ Mein Game-Bot
  
  <section>
     
-    <!-- Hauptspalte der Website -->
     Versuche in einem erste Schritt auf der Seite <a href="/piano.html">Pianogame</a> einen hohen score zu erreichen. Wer kann am meisten Punkte holen?
-
+    <br></br>  
+    Trage hier denen HighScore ein: 
+    <br></br> 
  
- <!-- Überschrift der innerhalb der Spalte -->
  <header>
  Auch Informatikerinnen und Informatiker der Fachrichtung Plattformentwicklung spielen gerne mal ein kleines Game zur Auflockerung.
  Nun ist aber ist ihre Leidenschaft die Programmierung von Automatisierungen. Warum also nicht einen Bot programmieren der mir die Arbeit abnimmt?
- Aber was ist ein Bot? <br></br> 
+ <br></br>
+ Aber was genau ist ein Bot?
+ <br></br> 
  Ein Bot ist eine wiederholende Automatisierung bei der keine weitere Interaktion nötig ist. Der Bot arbeitet für einen Benutzer.<br></br>
- Um einen Bot zu programmieren braucht es die Programmiersprache Python. <br></br>
+ Um einen Bot zu programmeren braucht es die Programmiersprache Python.
+ <br></br>
+ </header>
+ 
+ <article>
  Python ist bereits auf unseren Geräten installiert. Wenn du zu Hause Python nutzen willst kannst du das Programm gratis bei www.python.org beziehen. 
- Nach dem Download startest du die Installationsdatei und wählst «Install Now» Wichtig! Vorher  die Checkbox “add Python to path” (!) wählen.<br></br><br></br>
- Danach musst du noch Programmbibliotheken installieren. Diese Bibliotheken vereinfachen die Programmierung. 
+ Nach dem Download startest du die Installationsdatei und wählst «Install Now» Wichtig! Vorher die Checkbox “add Python to path” (!) wählen.<br></br><br></br>
+  </article>
+    
+ <footer>
+ Nach der Installation von Python müssen noch die Programmbibliotheken istalliert werden. 
+ Diese Bibliotheken vereinfachen die Prgrammierung.
+ <br></br>
  Um sie zu aktivieren öffnest du die sogenannte Kommandozeile mittels Befehl CMD. Gib im schwarzen Konsolenfenster nacheinander die 6 Befehle ein: <br></br>
- pip3 install pywin32 <br></br>
+ pip3 install pywin32 <br></br8
  pip3 install keyboard <br></br>
  pip3 install pyautogui <br></br>
  pip3 install opencv-python <br></br>
  pip3 install pillow <br></br>
  pip3 install Win32gui <br></br>
  pip3 install PyWinActivate <br></br>
-Danach kannst du das Konsolenfenster schliessen. 
- </header> 
-    
-    <!-- Textbereich innerhalb der Spalte -->
-    <article>
-     Funktion erstellen: «gehe zur Position X Y» “drücke Maus links” «Maus links loslassen»:<br></br>
-      <pre>    
-      def click(x,y): 
-      win32api.SetCursorPos((x,y)) 
-      win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0) 
-      time.sleep(0.01) #mimipause zwischen dem drücken und loslassen 
-      win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0) 
-      </pre>
-    </article>
-    
+ Danach kannst du das Konsolenfenster schliessen.
+ </footer>
+
   <aside>
   <!-- Eine praktische Seitenleiste für die Linksammlung: Diese Seitenleiste auf der rechten Seite heisst im HTML Code "aside"  -->
-  RGB und X Y Werte auslesen:
-- IDLE Shell öffnen
-- Bibliothek laden: Import pyautogui 
-- Funktion aufrufen: Pyautogui.displayMousePosition()
-- X Y Werte für Reihe 1 bis 4 auf einem Blatt Papier festhalten
   <br></br> 
   </aside>
-
-
-    <!-- Schlussteil innerhalb der Spalte -->
-    <footer>
-     Eine Schlaufe 'While – If'  für alle 4 Reihen erstellen: <br></br>
-     Die Nachfolgenden Befehle kannst du ins Python übertragen (copy-paste). Die Werte für xxx und yyy musst du vorgängig auslesen Konsultiere dafür die Seitenleiste. 
-    
-    </footer>
+ 
   </section>
   
  
 <footer>
 <!-- Der Fußbereich -->
-Hier ist die abschliessende Fusszeile <br></br>Platz für eigene Notizen 
+Was war für dich am spannensten mit der Arbeit am Game-Bot?  <br></br>
+.... <br></br>
+....<br></br>
 </footer>
 </main>   
 </body>
