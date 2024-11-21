@@ -16,21 +16,21 @@ win32gui.ShowWindow(hwnd, win32con.SW_MAXIMIZE)
 
 # Die nachfolgenden Zeilen definieren was beim Aufruf der Funktion "Click" passiert
 # Der Cursor geht auch die mitgegbene x-y Position und machen einen Mausklick
-def click(x,y): 
-      win32api.SetCursorPos((x,y)) 
-      win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0) 
-      time.sleep(0.03) #mimipause zwischen dem drücken und loslassen 
-      win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0) 
-      
+def click(x,y):
+      win32api.SetCursorPos((x,y))
+      win32api.mouse_event(win32con.MOUSEEVENTF_LEFTDOWN,0,0)
+      time.sleep(0.03) #mimipause zwischen dem drücken und loslassen
+      win32api.mouse_event(win32con.MOUSEEVENTF_LEFTUP,0,0)
+
 # Hier werden die viel Spalten nach den schwarzen Feldern geprüft
 # sobald schwarz detektiert wurde wird die Maus an dieser Position geklickt
-while keyboard.is_pressed ("q") == False: #wiederhole solange q nicht gedrückt ist 
-    if pyautogui.pixel (xxx, yyy) [2] == 0:   # [0]rd [1]gn [2]bl -> weil schwarz -> nur ein Wert  auf 0 prüfen 
-        click (xxx, yyy)  # entsprechende MausFunktion mit  X Y aufrufen 
+while keyboard.is_pressed ("Esc") == False: #wiederhole solange q nicht gedrückt ist
+    if pyautogui.pixel (xxx, yyy) [2] == 0:   # [0]rd [1]gn [2]bl -> weil schwarz -> nur ein Wert  auf 0 prüfen
+        click (xxx, yyy)  # entsprechende MausFunktion mit  X Y aufrufen
     if pyautogui.pixel (xxx, yyy) [2] == 0:    #dito wie oben für Spalte 2
-        click (xxx, yyy) 
+        click (xxx, yyy)
     if pyautogui.pixel (xxx, yyy) [2] == 0:    #dito wie oben für Spalte 3
-        click (xxx, yyy) 
+        click (xxx, yyy)
     if pyautogui.pixel (xxx, yyy) [2] == 0:    #dito wie oben für Spalte 4
-        click (xxx, yyy) 
-    
+        click (xxx, yyy)
+Exit()          
