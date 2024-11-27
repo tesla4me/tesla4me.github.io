@@ -1,0 +1,26 @@
+# Aus dem Modul time brauchen wir nur den Befehl sleep fuer Pausen
+from time import sleep
+# Modul um die Tastatur fuer Eingaben verwenden zu koennen
+import keyboard
+#-------------------------------
+
+#Beispiel um die while True schlaufe (ohne Drohne) zu testen
+while True:
+    sleep(0.1)
+    if(keyboard.is_pressed("UP")):
+        print("Salto vorwaerts")
+        sleep(0.1)
+    if(keyboard.is_pressed("DOWN")):
+        print("Salto rueckwaerts")
+        sleep(0.1)
+    if(keyboard.is_pressed("LEFT")):
+        print("Salto seitwaerts nach links")
+        sleep(0.1)
+    if(keyboard.is_pressed("RIGHT")):
+        print("Salto seitwaerts nach rechts")
+        sleep(0.1)
+    if(keyboard.is_pressed("SPACE")):
+        print("Abbrechen...")
+        break
+print ("Abbruch erfolgreich ausgefuehrt")
+exit
